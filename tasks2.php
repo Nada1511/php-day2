@@ -1,9 +1,12 @@
+
 <?php
-//////////////////// *task1*/////////////////////////////
-echo "This is a line of text with a newline character.\n";
-echo "This is another line of text.";
+////////////////////////* task1 *///////////////////////////////////////////
+$str = "hello \n world";
+echo nl2br($str);
 echo"<br>";
 ?>
+
+
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -30,6 +33,8 @@ echo "<br>";
 $arr = array(12,45,10,25);
 
 echo ("summtion is :". array_sum( $arr));
+echo "<br>";
+echo ("avarage is: ". (array_sum($arr)/count($arr)));
 
 echo "<br>"; echo"<br>";
 
@@ -50,17 +55,17 @@ echo"<br>"
 ;
 $arr2= array("sara"=> 31 ,"john"=>41 , "walaa"=>39 , "ramy"=>40);
 
-asort($arr2);
+asort($arr2);   ////////////sort array by value asce
 print_r($arr2);
 echo "<br>";
 ksort($arr2);
-print_r( $arr2);
+print_r( $arr2); /////////////////sort array by key asc
 echo "<br>";
-arsort($arr2);
-print_r( $arr2);
+arsort($arr2);  //////// sort array by value desc
+print_r( $arr2);  
 echo "<br>";
 krsort($arr2);
-print_r( $arr2);
+print_r( $arr2); //////////// sort array by key desc
 
 
 
